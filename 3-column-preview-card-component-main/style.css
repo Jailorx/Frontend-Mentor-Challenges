@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap");
+
+body {
+  color: hsl(0, 0%, 95%);
+  min-height: 100vh;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.car {
+  padding: 70px;
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.text h2 {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.text p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.text a {
+  text-decoration: none;
+  background-color: hsl(0, 0%, 95%);
+  padding: 10px 18px;
+  border-radius: 30px;
+
+  display: inline-block;
+  margin-top: 60px;
+}
+
+.sedan .text a {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv .text a {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury .text a {
+  color: hsl(179, 100%, 13%);
+}
+
+.cards a:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
