@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", serif;
+  font-size: 16px;
+  min-height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(225, 100%, 94%);
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+.content h2 {
+  color: hsl(223, 47%, 23%);
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 30px;
+}
+
+.plan {
+  display: flex;
+  padding: 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: left;
+  position: relative;
+}
+.info {
+  position: absolute;
+  left: 70%;
+  top: 5%;
+  margin-left: 30px;
+}
+
+.info h4 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.right a {
+  font-weight: 800;
+  color: hsl(223, 47%, 23%);
+}
+
+.right a:hover {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+a.proceed-btn {
+  display: block;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 17px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 30px 0;
+  font-weight: 800;
+}
+
+a.proceed-btn:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+a.cancel-btn {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+a.cancel-btn {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    font-size: 12px;
+  }
+  .container {
+    max-width: 87%;
+  }
+  .content h2 {
+    font-size: 24px;
+  }
+}
